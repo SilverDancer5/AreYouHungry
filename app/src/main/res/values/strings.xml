@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">饿死了么</string>
+    <string name="title_home">外卖</string>
+    <string name="title_dashboard">订单</string>
+    <string name="title_notifications">我的</string>
+    <string name="redPocket">红包卡券</string>
+    <string name="jintie">津贴</string>
+    <string name="wallet">钱包</string>
+    <string name="info">个人资料</string>
+</resources>

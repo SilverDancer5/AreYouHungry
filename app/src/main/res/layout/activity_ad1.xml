@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_pic1"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/picture19" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/iv_pic2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_pic1"
+            android:background="@drawable/picture20"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_chance"
+                android:layout_width="145dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="25dp"
+                android:background="#8f1afe"
+                android:text="本次还有3次翻牌机会"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="195dp"
+                android:background="@drawable/background17"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/picture23" />
+
+                <ImageView
+                    android:id="@+id/iv_center"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/picture23" />
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/picture23" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:layout_below="@id/iv_pic2"></LinearLayout>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

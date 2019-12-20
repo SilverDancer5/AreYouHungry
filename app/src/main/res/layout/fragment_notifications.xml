@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/text_notifications_UserName"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="30dp"
+                android:text="HYM"
+                android:textColor="#111111"
+                />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="再忙，也要记得吃饭哟~"
+                android:textSize="10dp"
+                />
+            <Button
+                android:id="@+id/clock_btn"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="10dp"
+                android:text="签到领10元红包"
+                android:drawableLeft="@drawable/clock"
+                android:background="@drawable/bottom_edge"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/headerImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/circle_img"
+            android:src="@drawable/tx"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/vip_Btn"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+
+            android:inputType="text"
+            android:text="超级会员开通后每月超过20元红包"
+            android:textColor="#614A35"
+            android:background="@drawable/bottom3_edge"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bottom2_edge"
+
+            />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bottom2_edge"
+            android:text="@string/jintie"/>
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bottom2_edge"
+            android:text="@string/wallet"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+
+
+
+
+
+</LinearLayout>

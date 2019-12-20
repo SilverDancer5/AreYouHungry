@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whitegray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/myOrder_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:background="@color/whitegray"
+            android:visibility="invisible"
+            android:text="我的订单"/>
+
+        <TextView
+            android:id="@+id/otherOrder_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/myOrder_Text"
+
+            android:text="其他订单"
+            android:textColor="@color/black"
+            android:background="@color/whitegray"/>
+
+    </RelativeLayout>
+
+
+    <com.example.ayh.ui.dashboard.NoScrollListView
+        android:id="@+id/orderList_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:background="@color/whitegray"/>
+
+    <TextView
+        android:id="@+id/showMoreOrder_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看三个月前的外卖订单"
+        android:textColor="@color/lightgray"
+        android:background="@color/whitegray"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_menuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="超大鸡排"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tv_title_menuTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_menuName"
+        android:layout_marginLeft="80dp"
+        android:layout_toLeftOf="@id/tv_menuTotalPrice"
+        android:text="¥"
+        android:textColor="#FF3E00"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tv_menuTotalPrice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_menuName"
+        android:layout_toLeftOf="@id/iv_subtract"
+        android:text="6.66"
+        android:textColor="#FF3E00"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/iv_subtract"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@id/tv_menuName"
+        android:layout_toLeftOf="@id/tv_number"
+        android:src="@drawable/icon_substarct" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_menuName"
+        android:layout_toLeftOf="@id/iv_add"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="#FF3E00"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@id/tv_menuName"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_add" />
+
+</RelativeLayout>

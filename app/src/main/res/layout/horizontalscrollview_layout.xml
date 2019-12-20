@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:background="@drawable/background4"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/image_horizontalscrollview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/food2" />
+
+        <TextView
+            android:id="@+id/text_horizontalscrollview1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="韩式炸鸡"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_horizontalscrollview2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="距离:755m" />
+
+</LinearLayout>

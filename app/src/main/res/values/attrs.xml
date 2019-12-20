@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="type" format="enum">
+            <enum name="circle" value="1"/>
+            <enum name="round" value="2"/>
+        </attr>
+        <attr name="radius" format="dimension"/>ssss
+    </declare-styleable>
+
+
+
+    <declare-styleable name="HeaderBar">
+        <attr name="title_text_clolor" format="color"></attr>
+        <attr name="title_text" format="string"></attr>
+        <attr name="show_views">
+            <flag name="left_text" value="0x01" />
+        </attr>
+    </declare-styleable>
+</resources>

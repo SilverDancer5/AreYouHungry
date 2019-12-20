@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_shoper_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/food5" />
+
+    <TextView
+        android:id="@+id/tv_shoper_shopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_shoper_image"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_shoper_image"
+        android:text="麦当劳麦乐送(文鼎店)"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_shoper_star"
+        android:layout_width="20dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/tv_shoper_shopName"
+        android:layout_alignLeft="@id/tv_shoper_shopName"
+        android:layout_alignBottom="@id/tv_shoper_remark"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon20" />
+
+    <TextView
+        android:id="@+id/tv_shoper_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shoper_shopName"
+        android:layout_toRightOf="@id/iv_shoper_star"
+        android:text="4.7"
+        android:textColor="#EB663C"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_shoper_titleSellnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_shoper_remark"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tv_shoper_remark"
+        android:text="月售"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shoper_sellnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_shoper_remark"
+        android:layout_toRightOf="@id/tv_shoper_titleSellnumber"
+        android:text="1198"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shoper_titleStartSendPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_shoper_star"
+        android:layout_alignLeft="@id/tv_shoper_shopName"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_shoper_star"
+        android:text="起送¥"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shoper_startSendPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_shoper_titleStartSendPrice"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/tv_shoper_titleStartSendPrice"
+        android:text="0"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shoper_titleSendPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_shoper_titleStartSendPrice"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_shoper_startSendPrice"
+        android:text="配送¥"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shoper_sendPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_shoper_titleStartSendPrice"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/tv_shoper_titleSendPrice"
+        android:text="9"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shoper_tltleDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_shoper_titleStartSendPrice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="m"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shoper_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_shoper_titleStartSendPrice"
+        android:layout_toLeftOf="@id/tv_shoper_tltleDistance"
+        android:text="810"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shoper_tltleTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_shoper_titleStartSendPrice"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_shoper_distance"
+        android:text="分钟"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shoper_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_shoper_titleStartSendPrice"
+        android:layout_toLeftOf="@id/tv_shoper_tltleTime"
+        android:text="28"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shoper_personalizadSignature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shoper_startSendPrice"
+        android:background="#FFEED5"
+        android:layout_alignLeft="@id/tv_shoper_shopName"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_shoper_star"
+        android:text="“味道不错，可乐也很多”"
+        android:textSize="12dp"
+        android:textColor="#EB910E"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_shoper_label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shoper_personalizadSignature"
+        android:background="@drawable/background7"
+        android:layout_alignLeft="@id/tv_shoper_shopName"
+        android:layout_marginTop="5dp"
+        android:text=" 49减9 "
+        android:textSize="12dp"
+        android:textColor="#E06D5E"/>
+
+    <TextView
+        android:id="@+id/tv_shoper_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shoper_personalizadSignature"
+        android:background="@drawable/background7"
+        android:layout_toRightOf="@id/tv_shoper_label1"
+        android:layout_alignBottom="@id/tv_shoper_label1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text=" 69减17 "
+        android:textSize="12dp"
+        android:textColor="#E06D5E"/>
+
+    <TextView
+        android:id="@+id/tv_shoper_label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shoper_personalizadSignature"
+        android:background="@drawable/background7"
+        android:layout_toRightOf="@id/tv_shoper_label2"
+        android:layout_alignBottom="@id/tv_shoper_label1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"
+        android:text=" 89减25 "
+        android:textColor="#E06D5E"/>
+
+    <TextView
+        android:id="@+id/tv_shoper_label4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shoper_personalizadSignature"
+        android:background="@drawable/background7"
+        android:layout_toRightOf="@id/tv_shoper_label3"
+        android:layout_alignBottom="@id/tv_shoper_label1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"
+        android:text=" 一元特价 "
+        android:textColor="#E06D5E"/>
+
+    <TextView
+        android:id="@+id/tv_shoper_label5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shoper_personalizadSignature"
+        android:background="@drawable/background7"
+        android:layout_toRightOf="@id/tv_shoper_label4"
+        android:layout_alignBottom="@id/tv_shoper_label1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"
+        android:text=" 5.8折 "
+        android:textColor="#E06D5E"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shoper_label1"/>
+
+</RelativeLayout>

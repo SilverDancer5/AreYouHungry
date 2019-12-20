@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.OneMoreOrderActivity"
+    android:orientation="vertical"
+    android:background="@color/whitegray">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="@color/whitegray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/whitegray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00A5FF">
+                <TextView
+                    android:id="@+id/title_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单已送达>"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:background="@drawable/bluelayout">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="420dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="感谢你对饿死了么的信任， 期待再次光临"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/bottom4_edge"
+                            android:text="申请售后"
+                            android:textSize="10dp"
+                            android:gravity="center"
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/bottom4_edge"
+                            android:text="评价"
+                            android:gravity="center"
+                            android:textSize="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="420dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:text="食品安全理赔"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="8dp"
+                    android:textColor="@color/lighblack"
+                    android:text="如食品发现异物，变质或引发就医，可在线申请理赔"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="420dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gg1"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/orderInfo_ListView"
+                android:layout_gravity="center"
+                android:layout_width="420dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"/>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/deliver_ListView"
+                android:layout_gravity="center"
+                android:layout_width="420dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_ListView"
+                android:layout_gravity="center"
+                android:layout_width="420dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
